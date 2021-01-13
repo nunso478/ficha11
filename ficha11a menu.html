@@ -108,52 +108,49 @@
     <br>
     <br>
     <br> 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
     
     
-          <footer>
-          <div class="container px-0">
-          <div class="col-lg-12 text-center">
-          <h1>UMa Cantina</h1>
-          <br>
-           <br>
-           <p>Rua de santa Maria nº 253 / nao onde / 290 134 939</p>
-           <p>Horaio: todos os dias das 8h ate 24h</p>
-            <br>
-            <div class="social-media">
-            <a href="#">
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-             <i class="fa fa-pinterest-square" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-             <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-            <br>
-            <p>&copy; 2019 universidade da madeira </p>
-          </div>
-          </div>
-          </footer>
+    
+    <footer class="site-footer">
+      <img class="footer-logo" src="images/logo.svg" alt="Fylo Logo">
+      <section class="footer-main">
+        <ul class="contact-info">
+          <li class="contact-info__item">
+            <img class="contact-icon" src="images/icon-phone.svg" alt="phone icon">
+            Phone: +1-543-123-4567</li>
+          <li class="contact-info__item">
+            <img class="contact-icon" src="images/icon-email.svg" alt="email icon">
+            example@fylo.com</li>
+        </ul>
+      
+        <nav class="footer-nav nav nav1">
+          <a class="footer-nav__menu" href="#">About Us</a>
+          <a class="footer-nav__menu" href="#">Jobs</a>
+          <a class="footer-nav__menu" href="#">Press</a>
+          <a class="footer-nav__menu" href="#">Blog</a>
+        </nav>
+        <nav class="footer-nav nav nav2">
+          <a class="footer-nav__menu" href="#">Contact Us</a>
+          <a class="footer-nav__menu" href="#">Terms</a>
+          <a class="footer-nav__menu" href="#">Privacy</a>
+        </nav>
+        <div class="social-menu">
+          <a class="social-menu__link" href="https://www.facebook.com/" target="_blank">
+            <span class="sr-only">Facebook link</span>
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-menu__link" href="https://www.twitter.com/" target="_blank">
+            <span class="sr-only">Twitter link</span>
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="social-menu__link" href="https://www.instagram.com/" target="_blank">
+            <span class="sr-only">Instagram link</span>
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+    
+    </footer>
           <!-- Button trigger modal -->
     
     
@@ -188,6 +185,21 @@
     </div>
     
           <style>
+            .footer-logo {
+  padding: 5% 3% 0;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+ 
+.footer-main {  display: flex; justify-content: space-around; }
+.footer-nav {  display: grid; }
+.footer-nav__menu {  padding-bottom: 8%; }
+ 
+.site-footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  overflow: hidden;
+}
             .home-food img{
               border-radius: 50%;
               max-width: 100%;
@@ -215,6 +227,7 @@
             }
             body{
               background-color: white;
+             
             }
             .cor-principal{
               color:crimson;
@@ -230,10 +243,12 @@
             }
           footer{
             color:white;
+            
           }
           footer  .col-lg-12{
             background-color: maroon;
             padding: 60px;
+            margin: 0;
           }
           .social-media{
             padding: 0 10px;
